@@ -1,6 +1,10 @@
 web icon link 
 https://img.icons8.com/fluency/000000/video.png
 
+font poppins link here
+Put in html file = <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+Put in css file = font-family: 'Poppins',sans-serif;
+
 font_awesome
 == <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
