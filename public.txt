@@ -13,6 +13,43 @@ link here
 <i class="fas fa-expand"></i> id _ btnfullscreen
 
 
+
+color root_:
+
+--blue:#1a73e8;
+--light-blue:#dae4ff;
+--black:#202020;
+--white:#ffffff;
+--col-left-bg:#fafafa;
+--row-bg:#ffffff;
+
+# shadow
+--shadow:rgba(210, 210, 218, 0.103) 0px 7px 29px 0px;
+--inset-shadow:rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+# transform
+--transform-r:rotate(0deg);
+
+
+# ‘’‘’‘’‘’‘’‘’‘’‘’‘’‘’‘’‘’‘’‘’‘’‘’‘
+dark root_:
+--light-blue:#202020;
+--black:#ffffff;
+--white:#505050;
+--col-left-bg:#454545;
+--row-bg:#404040;
+
+# shadow
+--shadow:rgba(210, 210, 218, 0.103) 0px 7px 29px 0px;
+--inset-shadow:rgba(117, 117, 151, 0.25) 0px 30px 60px -50px inset,rgba(194, 194, 194, 0.3) 0px 18px 36px -10px inset;
+
+# transform
+--transform-r:rotate(360deg);
+
+
+
+
+
+
 # script here
 
 function intializePlayer(){
