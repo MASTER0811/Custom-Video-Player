@@ -1,0 +1,47 @@
+web icon link 
+https://img.icons8.com/fluency/000000/video.png
+
+font_awesome
+== <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+link here
+<i class="fas fa-moon"></i> _ id btndark
+<i class="fas fa-sun"></i> _ id btnlight
+<i class="fas fa-play"></i> _ id btnplay
+<i class="fas fa-pause"></i> _ id btnpause
+<i class="fas fa-stop"></i> _ id btnstop
+<i class="fas fa-expand"></i> id _ btnfullscreen
+
+
+# script here
+
+function intializePlayer(){
+	// Set object references
+	var seekslider = document.getElementById("seekslider");
+	var curtimetext = document.getElementById("curtimetext");
+	var durtimetext = document.getElementById("durtimetext");
+	// Add event listeners
+	seekslider.addEventListener("change",vidSeek,false);
+	vid.addEventListener("timeupdate",seektimeupdate,false);
+}
+window.onload = intializePlayer;
+function vidSeek(){
+	var seekto = vid.duration * (seekslider.value / 100);
+	vid.currentTime = seekto;
+}
+function seektimeupdate(){
+	var nt = vid.currentTime * (100 / vid.duration);
+	seekslider.value = nt;
+	var curmins = Math.floor(vid.currentTime / 60);
+	var cursecs = Math.floor(vid.currentTime - curmins * 60);
+	var durmins = Math.floor(vid.duration / 60);
+	var dursecs = Math.floor(vid.duration - durmins * 60);
+	if(cursecs < 10){ cursecs = "0"+cursecs; }
+	if(dursecs < 10){ dursecs = "0"+dursecs; }
+	if(curmins < 10){ curmins = "0"+curmins; }
+	if(durmins < 10){ durmins = "0"+durmins; }
+	curtimetext.innerHTML = curmins+":"+cursecs;
+	durtimetext.innerHTML = durmins+":"+dursecs;
+}
+
+
